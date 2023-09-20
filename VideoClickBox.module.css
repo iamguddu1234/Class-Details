@@ -1,0 +1,10 @@
+.videoClickBox {
+  height: 100px;
+  border-radius: 10px;
+}
+
+.thumbnails {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+}

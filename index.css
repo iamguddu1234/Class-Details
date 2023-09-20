@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+color{
+    /*Core color codes------global color codes #224C98 */
+    --themeColor: #207ef5;/* #224C98;/*#263c63;/* #1b3d7a;#4285F4*/
+    --deepDarkThemeTextColor: #1b1e24;/*#29303d;/*#132545;/*#0e1c36;*/
+    --greyTextColor: #5e5d5d;
+    --cardBorderColor: #D3D3D3;
+    --cardBorderColorLight : #E8E8E8;
+    --greenColor1: #65c394;
+    --redColor1: #ff726f;
+    --chatCommentBkgColor:#E3EFFE ;
+    --bodyBkgColor: #f2f2f2;
+}
