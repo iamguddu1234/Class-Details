@@ -17,13 +17,17 @@ function classTitleBar() {
   return (
     <div className={classes.parentContainer}>
       <div className={classes.headerSection}>
+
         <div className={classes.classContainer}>
+          
           <div className={classes.classIcon}>
             <BsFillBookFill />
           </div>
           <div className={classes.classTitle}>Course Name : </div>
           <div className={classes.classNa}>Basic of Biology</div>
         </div>
+
+
 
         <div className={classes.statusContainer}>
           <div className={classes.statusIcon}>

@@ -12,12 +12,37 @@ html {
 }
 
 .instituteBar {
+  background-color: white;
   margin-top: 10px;
   border-radius: 10px;
   border: 1px solid;
   border-color: #e8e8e8;
   border-color: #d3d3d3;
   padding: 16px;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.commentIcon {
+  color: var(--greyTextColor);
+
+  background-color: var(--bodyBkgColor);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitlte {
+  margin-left: 8px;
+  color: var(--greyTextColor);
+  text-transform: uppercase;
 }
 
 .mainContinaer {
@@ -36,7 +61,7 @@ html {
   border-radius: 50%;
 }
 
-.commnetBox {
+.commentBox {
   margin-left: 20px;
   width: 40%;
   height: 30px;
@@ -45,20 +70,65 @@ html {
   padding-left: 10px;
 }
 
+.commentBox:focus {
+  padding-left: 8px;
+  padding-right: 8px;
+  border-style: solid;
+  border-width: 1px;
+  outline: none !important;
+  border-color: var(--cardBorderColorLight);
+  border-color: var(--themeColor);
+}
+
 .postButtonContainer {
   margin-top: 10px;
-  width: 50%;
+  margin-left: 70px;
+  width: 40%;
   display: flex;
   justify-content: end;
   align-items: center;
 }
 
 .postButton {
-  margin-right: 76px;
   width: 80px;
   height: 26px;
   border-radius: 6px;
   background-color: var(--themeColor);
   color: white;
   border: none;
+}
+
+@media (max-width: 1300px) {
+  .parentContainer {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+  }
+
+  .commentBox {
+    margin-left: 20px;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--cardBorderColor);
+    padding-left: 10px;
+  }
+
+  .postButtonContainer {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .postButton {
+    width: 80px;
+    height: 26px;
+    border-radius: 6px;
+    background-color: var(--themeColor);
+    color: white;
+    border: none;
+  }
 }

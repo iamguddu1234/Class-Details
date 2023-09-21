@@ -4,6 +4,9 @@ import { BsPeopleFill } from "react-icons/bs";
 import ProfileImage from "./img.jpg"
 
 
+
+
+
 function InstructorBar() {
   return (
     <div className={classes.parentContainedr}>

@@ -1,17 +1,29 @@
 import classes from "./Homework.module.css";
 import { BiEdit } from "react-icons/bi";
 
+import { BsFileTextFill, BsPencilSquare } from "react-icons/bs";
+
 function Homework() {
   return (
     <div className={classes.parentContainer}>
       <div className={classes.instituteBar}>
         <div className={classes.topContainer}>
           <div className={classes.leftContainer}>
+            
+            <div className={classes.homeworkIcon}>
+              <BsFileTextFill />
+            </div>
+
             <div className={classes.preTitle}>HomeWork :</div>
 
             <div className={classes.notSetTitle}>Set</div>
           </div>
-          <button className={classes.editBtn}>Edit</button>
+
+          <button className={classes.editBtnContainer}>
+            <BsPencilSquare className={classes.editbutton} />
+
+            <div className={classes.editText}>Edit</div>
+          </button>
         </div>
 
         <div className={classes.bottomContainer}>

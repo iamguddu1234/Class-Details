@@ -1,3 +1,15 @@
+html {
+  /*Core color codes------global color codes #224C98 */
+  --themeColor: #207ef5; /* #224C98;/*#263c63;/* #1b3d7a;#4285F4*/
+  --deepDarkThemeTextColor: #1b1e24; /*#29303d;/*#132545;/*#0e1c36;*/
+  --greyTextColor: #5e5d5d;
+  --cardBorderColor: #d3d3d3;
+  --cardBorderColorLight: #e8e8e8;
+  --greenColor1: #65c394;
+  --redColor1: #ff726f;
+  --chatCommentBkgColor: #e3effe;
+  --bodyBkgColor: #f2f2f2;
+}
 .instituteBar {
   margin-top: 10px;
   border-radius: 10px;
@@ -5,6 +17,7 @@
   border-color: #e8e8e8;
   border-color: #d3d3d3;
   padding: 16px;
+  background-color: white;
 }
 
 .instituteBar i {
@@ -23,16 +36,62 @@
   align-items: flex-start;
 }
 
-.editButton {
-  width: 80px;
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--cardBorderColorLight);
-    background-color: var(--bodyBkgColor);
-    border-radius: 6px;
-    padding: 4px;
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftSideContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.studyIcon {
+  color: var(--greyTextColor);
+
+  background-color: var(--bodyBkgColor);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitle {
+  margin-left: 8px;
+  color: var(--greyTextColor);
+  text-transform: uppercase;
+}
+
+.editBtnContainer {
+  border: 1px solid;
+  border-color: #e8e8e8;
+  border-color: #d3d3d3;
+  font-size: 14px;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bodyBkgColor);
+}
+
+.editBtnContainer:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--themeColor);
+  font-weight: 700;
+}
+
+.editBtnContainer:hover .editbutton {
+  color: white;
+}
+
+.editbutton {
+  padding-right: 6px;
+  color: var(--tintGreyColor1);
 }
 
 .titleSpace {
@@ -46,7 +105,6 @@
 }
 
 .videoMicroContainer {
-  
   display: grid;
   grid-template-columns: repeat(auto-fit, 100px);
   grid-template-rows: 1fr;
@@ -64,9 +122,13 @@
   color: white;
   padding: 4px;
   border-radius: 6px;
+  font-weight: 600;
 }
-u .uploadButton:hover {
+.uploadButton:hover {
   cursor: pointer;
+  background-color: white;
+  color: var(--themeColor);
+  border: 1px solid var(--themeColor);
 }
 
 .textInfo {
@@ -77,4 +139,7 @@ u .uploadButton:hover {
 .pdfFileIcon {
   width: 100px;
   height: 150px;
+}
+.pdfFileIcon:hover {
+  cursor: pointer;
 }

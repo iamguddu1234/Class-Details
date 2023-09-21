@@ -18,6 +18,7 @@ html {
   border-color: #e8e8e8;
   border-color: #d3d3d3;
   padding: 16px;
+  background-color: white;
 }
 
 .topBar {
@@ -32,12 +33,29 @@ html {
   align-items: center;
 }
 
-.mainTitle{
+.topContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoIcon {
+  color: var(--greyTextColor);
+
+  background-color: var(--bodyBkgColor);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainTitle {
+  margin-left: 8px;
   color: var(--greyTextColor);
   text-transform: uppercase;
 }
-
-
 
 .instituteBar i {
   font-style: normal;
@@ -55,16 +73,33 @@ html {
   align-items: flex-start;
 }
 
-.editButton {
-  width: 80px;
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--cardBorderColorLight);
-    background-color: var(--bodyBkgColor);
-    border-radius: 6px;
-    padding: 4px;
+.editBtnContainer {
+  border: 1px solid;
+  border-color: #e8e8e8;
+  border-color: #d3d3d3;
+  font-size: 14px;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bodyBkgColor);
+}
+
+.editBtnContainer:hover {
+  cursor: pointer;
+  color: white;
+  background-color: var(--themeColor);
+  font-weight: 700;
+}
+
+.editBtnContainer:hover .editbutton {
+  color: white;
+}
+
+.editbutton {
+  padding-right: 6px;
+  color: var(--tintGreyColor1);
 }
 
 .titleSpace {
@@ -98,10 +133,17 @@ html {
 }
 
 .uploadButton:hover {
+  background-color: white;
+  color: var(--themeColor);
+  cursor: pointer;
+  border: 1px solid var(--themeColor);
+}
+
+.uploadButton:hover {
   cursor: pointer;
 }
 
 .textInfo {
   margin-top: 10px;
-  color: var(--greyTextColor);
+  color: var(--deepDarkThemeTextColor);
 }

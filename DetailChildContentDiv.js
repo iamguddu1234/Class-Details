@@ -18,6 +18,9 @@ import 'typeface-roboto';
 function App() {
   return (
     <div className={classes.parentContainer}>
+
+
+      <div className={classes.mainContainer}>
       
       <ClassTitleBar />
 
@@ -38,6 +41,8 @@ function App() {
       <Homework />
 
       <ChatNQuestion />
+
+      </div>
 
     </div>
   );

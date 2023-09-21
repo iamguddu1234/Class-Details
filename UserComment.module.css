@@ -17,8 +17,11 @@ html {
     margin-top: 20px;
     width: 50%;
     display: flex;
+    background-color: white;
 
 }
+
+
 
 .pic{
     width: 40px;
@@ -28,7 +31,7 @@ html {
 
 .rightContainer{
     margin-left: 10px;
-    border-bottom: 1px solid var(--cardBorderColor);
+    /* border-bottom: 1px solid var(--cardBorderColor); */
 }
 
 .topContainer{
@@ -48,6 +51,7 @@ html {
 }
 
 .comment{
+    font-size: 14px;
     margin-top: 5px;
     margin-bottom: 5px;
     color: var(--deepDarkThemeTextColor);
@@ -55,3 +59,14 @@ html {
     
     
 }
+
+@media (max-width: 1300px) {
+    .parentContainer{
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        background-color: white;
+    
+    }
+  
+  }

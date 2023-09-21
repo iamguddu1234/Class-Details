@@ -14,10 +14,10 @@ function UserComment() {
           <div className={classes.timepost}>1 day ago</div>
         </div>
 
-        <div className={classes.comment}>Hello THis is the First Demo commnet</div>
+        <div className={classes.comment}>
+          Hello This is the First Demo comment
+        </div>
       </div>
-
-      
     </div>
   );
 }
